@@ -3,7 +3,7 @@
 
 def primes(number_of_primes):
     if number_of_primes <= 0:
-        raise ValueError(f"{number_of_primes} is not valid, value must be greater than 0.")
+        raise ValueError()
     list = [2]
     n = 3
     while len(list) < number_of_primes:
@@ -18,5 +18,3 @@ def primes(number_of_primes):
                 list.append(n)
         n += 1
     return list
-
-print(primes(-1))
